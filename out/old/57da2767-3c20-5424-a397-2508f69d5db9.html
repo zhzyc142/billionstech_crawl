@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+
+        <script nonce="580444234" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+
+<script nonce="580444234" type="text/javascript">
+    var biz = ""||"MzI4MTMwODE2MA==";
+    var sn = "" || ""|| "";
+    var mid = "" || ""|| "2247490904";
+    var idx = "" || "" || "4";
+    window.__allowLoadResFromMp = true;
+
+
+</script>
+<script nonce="580444234" type="text/javascript">
+var page_begintime=+new Date,is_rumor="",norumor="";
+1*is_rumor&&!(1*norumor)&&biz&&mid&&(document.referrer&&-1!=document.referrer.indexOf("mp.weixin.qq.com/mp/rumor")||(location.href="http://mp.weixin.qq.com/mp/rumor?action=info&__biz="+biz+"&mid="+mid+"&idx="+idx+"&sn="+sn+"#wechat_redirect"));
+</script>
+<script nonce="580444234" type="text/javascript">
+var MutationObserver=window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver,isDangerSrc=function(t){
+if(t){
+var e=t.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+if(e&&!/qq\.com(\:8080)?$/.test(e[1])&&!/weishi\.com$/.test(e[1]))return!0;
+}
+return!1;
+},ishttp=0==location.href.indexOf("http://");
+-1==location.href.indexOf("safe=0")&&ishttp&&"function"==typeof MutationObserver&&"mp.weixin.qq.com"==location.host&&(window.__observer_data={
+count:0,
+exec_time:0,
+list:[]
+},window.__observer=new MutationObserver(function(t){
+window.__observer_data.count++;
+var e=new Date,r=[];
+t.forEach(function(t){
+for(var e=t.addedNodes,o=0;o<e.length;o++){
+var n=e[o];
+if("SCRIPT"===n.tagName){
+var i=n.src;
+isDangerSrc(i)&&(window.__observer_data.list.push(i),r.push(n)),!i&&window.__nonce_str&&n.getAttribute("nonce")!=window.__nonce_str&&(window.__observer_data.list.push("inlinescript_without_nonce"),
+r.push(n));
+}
+}
+});
+for(var o=0;o<r.length;o++){
+var n=r[o];
+n.parentNode&&n.parentNode.removeChild(n);
+}
+window.__observer_data.exec_time+=new Date-e;
+}),window.__observer.observe(document,{
+subtree:!0,
+childList:!0
+})),function(){
+if(-1==location.href.indexOf("safe=0")&&Math.random()<.01&&ishttp&&HTMLScriptElement.prototype.__lookupSetter__&&"undefined"!=typeof Object.defineProperty){
+window.__danger_src={
+xmlhttprequest:[],
+script_src:[],
+script_setAttribute:[]
+};
+var t="$"+Math.random();
+HTMLScriptElement.prototype.__old_method_script_src=HTMLScriptElement.prototype.__lookupSetter__("src"),
+HTMLScriptElement.prototype.__defineSetter__("src",function(t){
+t&&isDangerSrc(t)&&window.__danger_src.script_src.push(t),this.__old_method_script_src(t);
+});
+var e="element_setAttribute"+t;
+Object.defineProperty(Element.prototype,e,{
+value:Element.prototype.setAttribute,
+enumerable:!1
+}),Element.prototype.setAttribute=function(t,r){
+"SCRIPT"==this.tagName&&"src"==t&&isDangerSrc(r)&&window.__danger_src.script_setAttribute.push(r),
+this[e](t,r);
+};
+}
+}();
+</script>
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="580444234" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd';
+        var tmp = url.split('?'),
+            query = (tmp[1] || "").split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || "" || '';
+        window.key = params['key'] || "" || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+        window.appmsg_token = "";
+    })();
+
+    function wx_loaderror() {
+        if (location.pathname === '/bizmall/reward') {
+            new Image().src = '/mp/jsreport?key=96&content=reward_res_load_err&r=' + Math.random();
+        }
+    }
+
+</script>
+
+<script nonce="580444234" type="text/javascript">
+        window.__moon_report_uin = "0";
+            window.no_moon_ls = 0;
+    </script>
+        <title>
+ 世界杯4年一次不是为了赌球和跳楼，这些温暖的瞬间才该刷爆朋友圈
+</title>
+
+<style>.radius_avatar{display:inline-block;background-color:#fff;padding:3px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;overflow:hidden;vertical-align:middle}.radius_avatar img{display:block;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;background-color:#eee}.rich_media_empty_extra{background-color:#fafafa}.appmsg_skin_default.rich_media_empty_extra{background-color:#fff}.appmsg_skin_default .rich_media_area_primary,.appmsg_skin_default .article_modify_area .weui-loadmore_line .weui-loadmore__tips{background-color:#fff}.appmsg_style_default .rich_media_tool{padding-top:15px}.rich_media_title_ios{font-weight:700}.rich_media_inner{word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.rich_media_area_primary{padding:20px 16px 12px;background-color:#fafafa}.rich_media_area_primary.voice{padding-top:66px}.rich_media_area_primary .weui-loadmore_line .weui-loadmore__tips{color:rgba(0,0,0,0.3)}.rich_media_area_extra{padding:0 16px 24px}.rich_media_extra{padding-top:30px}.mpda_bottom_container .rich_media_extra{padding-top:24px}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.6}body{-webkit-touch-callout:none;font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;color:#333;background-color:#f2f2f2;letter-spacing:.034em}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:16px}*{margin:0;padding:0}a{color:#576b95;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}.rich_media_title{font-size:22px;line-height:1.4;margin-bottom:14px}@supports(-webkit-overflow-scrolling:touch){.rich_media_title{font-weight:700}}.rich_media_meta_list{margin-bottom:22px;line-height:20px;font-size:0;word-wrap:break-word;word-break:break-all}.rich_media_meta_list em{font-style:normal}.rich_media_meta{display:inline-block;vertical-align:middle;margin:0 10px 10px 0;font-size:15px;-webkit-tap-highlight-color:rgba(0,0,0,0)}.rich_media_meta.icon_appmsg_tag{margin-right:4px}.rich_media_meta.meta_tag_text{margin-right:0}.rich_media_meta_primary{display:block;margin-bottom:10px;font-size:15px}.meta_original_tag{padding:0 .5em;font-size:12px;line-height:1.4;background-color:#f2f2f2;color:#888}.meta_enterprise_tag img{width:30px;height:30px!important;display:block;position:relative;margin-top:-3px;border:0}.rich_media_meta_link{color:#576b95}.rich_media_meta_text{color:rgba(0,0,0,0.3)}.rich_media_meta_text.rich_media_meta_split{padding-left:10px}.rich_media_meta_text.rich_media_meta_split:before{position:absolute;top:50%;left:0;margin-top:-6px;content:' ';display:block;border-left:1px solid #888;width:200%;height:130%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-transform:scale(0.5);transform:scale(0.5);-webkit-transform-origin:0 0;transform-origin:0 0}.rich_media_meta_text.article_modify_tag{position:relative}.rich_media_meta_nickname{position:relative}.rich_media_thumb_wrp{margin-bottom:6px}.rich_media_thumb_wrp .original_img_wrp{display:block}.rich_media_thumb{display:block;width:100%}.rich_media_content{overflow:hidden;color:#333;font-size:17px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;text-align:justify}.rich_media_content *{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}.rich_media_content p{clear:both;min-height:1em}.rich_media_content em{font-style:italic}.rich_media_content fieldset{min-width:0}.rich_media_content .list-paddingleft-2{padding-left:2.2em}.rich_media_content .list-paddingleft-2 .list-paddingleft-2{padding-left:30px}.rich_media_content blockquote{margin:0;padding-left:10px;border-left:3px solid #dbdbdb}.weui-mask{position:fixed;z-index:1000;top:0;right:0;left:0;bottom:0;background:rgba(0,0,0,0.6)}.weui-dialog{position:fixed;z-index:5000;width:80%;max-width:300px;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-color:#fff;text-align:center;border-radius:3px;overflow:hidden}.weui-dialog__hd{padding:1.3em 1.6em .5em}.weui-dialog__title{font-weight:400;font-size:18px}.weui-dialog__bd{padding:0 1.6em .8em;min-height:40px;font-size:15px;line-height:1.3;word-wrap:break-word;word-break:break-all;color:#999}.weui-dialog__bd:first-child{padding:2.7em 20px 1.7em;color:#353535}.weui-dialog__ft{position:relative;line-height:48px;font-size:18px;display:-webkit-box;display:-webkit-flex;display:flex}.weui-dialog__ft:after{content:" ";position:absolute;left:0;top:0;right:0;height:1px;border-top:1px solid #d5d5d6;color:#d5d5d6;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.weui-dialog__btn{display:block;-webkit-box-flex:1;-webkit-flex:1;flex:1;color:#3cc51f;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);position:relative}.weui-dialog__btn:active{background-color:#eee}.weui-dialog__btn:after{content:" ";position:absolute;left:0;top:0;width:1px;bottom:0;border-left:1px solid #d5d5d6;color:#d5d5d6;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleX(0.5);transform:scaleX(0.5)}.weui-dialog__btn:first-child:after{display:none}.weui-dialog__btn_default{color:#353535}.weui-dialog__btn_primary{color:#0bb20c}img{height:auto!important}@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait){.rich_media_area_extra{padding-bottom:34px}}@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape){.rich_media_area_primary{padding:20px 60px 15px 60px}.rich_media_area_extra{padding:0 60px 21px 60px}}@media screen and (min-width:1024px){.rich_media_area_primary_inner,.rich_media_area_extra_inner{max-width:677px;margin-left:auto;margin-right:auto}.rich_media_area_primary{padding-top:32px}}.appmsg_share_notice{font-size:16px;color:#888;position:relative;padding:1.25em 0;margin-bottom:1.75em}.appmsg_share_notice:before{content:" ";position:absolute;left:0;top:0;right:0;height:1px;border-top:1px solid #dfdfdf;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.appmsg_share_notice:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dfdfdf;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.appmsg_share_notice_hd{font-weight:700;padding-bottom:.2em}.cell{padding:.8em 0;display:block;position:relative}.cell_hd,.cell_bd,.cell_ft{display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-all;white-space:nowrap}.cell_primary{width:2000px;white-space:normal}.flex_cell{padding:10px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex_cell_primary{width:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;box-flex:1;flex:1}.original_tool_area{display:block;padding:.75em 1em 0;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#333;border:1px solid #eaeaea;margin:20px 0}.original_tool_area .tips_global{position:relative;padding-bottom:.5em;font-size:15px}.original_tool_area .tips_global:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dbdbdb;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:27px;height:27px;padding:0;margin-right:.5em}.original_tool_area .radius_avatar img{height:100%!important}.original_tool_area .flex_cell_bd{width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.original_tool_area .flex_cell_ft{font-size:14px;color:#888;padding-left:1em;white-space:nowrap}.original_tool_area .icon_access:after{content:" ";display:inline-block;height:8px;width:8px;border-width:1px 1px 0 0;border-color:#cbcad0;border-style:solid;transform:matrix(0.71,0.71,-0.71,0.71,0,0);-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);position:relative;top:-2px;top:-1px}.rich_media_global_msg{position:fixed;top:0;left:0;right:0;padding:.85em 35px .85em 15px;z-index:2;background-color:#c6e0f8;color:#888;font-size:12px}.rich_media_global_msg .icon_closed{position:absolute;right:15px;top:50%;margin-top:-5px;line-height:300px;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);background:transparent url(//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x2eb52b.png) no-repeat 0 0;width:11px;height:11px;vertical-align:middle;display:inline-block;-webkit-background-size:100% auto;background-size:100% auto}.rich_media_global_msg .icon_closed:active{background-position:0 -17px}.rich_media_global_msg.voice{color:#1aad19;background-color:#e8f6e8;padding-left:43.3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rich_media_global_msg.voice .ic_voice{position:absolute;top:50%;margin-top:-10px;left:15px;display:inline-block;width:13.3px;height:18.3px;background:url(data:image/png;base64,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) no-repeat center;background-size:contain}.rich_media_global_msg.voice .icon_more{position:absolute;right:15px;top:50%;margin-top:-6.5px;width:8px;height:13px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAYAAADeB1slAAAAAXNSR0IArs4c6QAAA49JREFUSA2tVk1IVFEUPveOmhQk1ibfvLFZSJtACqJIIpCIoB+imcFV2Z9ZUVnRomgRGFn2i6mFf5XVotCZMYmgIMhlq6BFENFiwjfPAosgFzXOvNu5o3fmeue98Y16F3PP+c453/fu/xCQmvZSWwwJaC0G6P8WND9IoTmbVFRycpqAdgBWkwRo94V960RsPn1aoPpN9RI6CR0WsDWcjAErtUiqTR/S18+HnNcSTv5zYrwDSatVMgLkH6aciwfj79WYW5+OT4xfsyPnBIgvwt872qBW45ZQzaMlJXCfMPJbDQgfRUoIhduVUW2TwArpaWyX+bnYU9JAAH44FaJIccqCW76Ib7NTjhOOvFPN/8q/IvE3cR+npFJgao9rkiSUXjD2GCNqzMnPbNPYjth3mqINlJAvTsk4kiJmWa3eQe8WpxwVzwjwgFFn/CorL29EkY9qovC5CFDrKq7JVoHl6zNTJCf53/lLk78SN/FcbJRx2cZCixC4ZATGXsu4as8YgQjGamN/q5atOotn4K3A1J4BUMbgsh7Wt6sx2bcV4AkjtSPJxkDjRQL0hVwg21zEglSzN+rdKeOybTtFcgK39ajWZDFWr+IZHxfGQ8mV0YA5nMGmDVcCPNcb8R5gYJ1UCWQfp6PFCI4NyZhrAV6EIiHGrPOAB0ImkW2c0la8u8ICc0wUCWrvC1dsw+3TnN6uanDaJ4zeiIfiA9wtWIAX8XspxeA6iuBlaN88hNzCNXk+JwFOuXJYW5tMQmc+EcqgzXGb2n9XFk1NstX5yKczl89JAF+6vRaBM1m5XAu//qkRGrtb8BThTtqH2/V0LmUWwbvsiREw8X0vcJHxxNbjNm3KUuVaMjmPFuWm2CPesHc/kp+yj06hFMhj/PIOOcfVFLk6xZT0G3vMTpmc27MusityZk/OBfKOwA05MPLIDJn3OJldcxTQotpBYOyEXVEWIw/NoInvuHOznSJfVDs0GzneNw9mI+eyOSPQI9phfCqPO38TFhHaFw/Eu/LliNiMESB5w6zkzD05F8mMYJr8mFC263Fa+vAadvXloj4toEcrjlgMjgrQrseHpBcfkm67WD6M6MN6lTWZeoZjyYxGLcB57MGnsEfF3fjU2G189QBpcUqmBLrnSs4504s8GjLxrwm5qYrg3dKFf6x6VbwQ3yOS/wz8+bS0ruwfELaBY2nyoNkn4gvW65GKRn4WForwP+dONHDaOHeZAAAAAElFTkSuQmCC) no-repeat center;background-size:contain}.preview_appmsg .rich_media_title{margin-top:2.3em}@media screen and (min-width:1024px){.rich_media_global_msg{position:relative;margin-bottom:32px}.preview_appmsg .rich_media_title.rich_media_title{margin-top:0}}.pages_reset{color:#333;line-height:1.6;font-size:16px;font-weight:400;font-style:normal;text-indent:0;letter-spacing:normal;text-align:left;text-decoration:none;white-space:normal}.weapp_element,.weapp_display_element,.mp-miniprogram{display:block;margin:1em 0}.share_audio_context{margin:16px 0}.weapp_text_link{font-size:17px}.weapp_text_link:before{content:'';display:inline-block;line-height:1;background-size:12px 12px;background-repeat:no-repeat;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAb1BMVEUAAAB4it11h9x2h9x2h9x2htx8j+R8i+B1h9x2h9x3h92Snv91htt2h9x1h9x4h9x1h9x1h9x2idx1h9t2h9t1htt1h9x1h9x1htx2h9x1h912h9x4h913iN17juOOjuN1iNx2h9t4h958i+B1htvejBiPAAAAJHRSTlMALPLcxKcVEOXXUgXtspU498sx69DPu5+Yc2JeRDwbCYuIRiGBtoolAAAA3ElEQVQoz62S1xKDIBBFWYiFYImm2DWF///G7DJEROOb58U79zi4O8iOo8zuCRfV8EdFgbYE49qFQs8ksJInajOA1wWfYvLcGSueU/oUGBtPpti09uNS68KTMcrQ5jce4kmN/HKn9XVPAo702JEdx9hTUrWUqVrI3KwUmM1NhIWMKdwiGvpGMWZOAj1PZuzAxHwhVSplrajoseBnbyDHAwvrtvKKhdqTtFBkL8wO5ijcsS3G1JMNvQ5mdW7fc0x0+ZcnlJlZiflAomdEyFaM7qeK2JahEjy5ZyU7jC/q/Rz/DgqEuAAAAABJRU5ErkJggg==');vertical-align:middle;font-size:11px;color:#888;border-radius:10px;background-color:#f4f4f4;margin-right:6px;margin-top:-4px;background-position:center;height:20px;width:20px}.flex_context{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center}.flex_bd{-webkit-box-flex:1;-webkit-flex:1;flex:1;word-wrap:break-word;word-break:break-all}.original_page{background-color:#fff;font-size:16px}.account_info{padding:0 0 20px}.account_info .flex_bd{padding-left:.85em}.radius_avatar.account_avatar{width:40px;height:40px;padding:0}.account_nickname{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;line-height:1.2;color:#576b95;font-size:14px}.account_nickname_inner{font-weight:400;vertical-align:top}.account_desc{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;color:#b2b2b2;font-size:13px;line-height:1.2;padding-top:.3em}.account_desc_inner{display:inline;vertical-align:top}.share_notice{margin-bottom:20px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.share_media{padding-bottom:18px}.original_panel{padding:20px;background-color:#fcfcfc;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;overflow:hidden;position:relative}.original_panel:after{content:" ";border:1px solid #d8d8d8;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;position:absolute;top:0;left:0;width:200%;height:200%;-webkit-transform:scale(0.5);transform:scale(0.5);-webkit-transform-origin:0 0;transform-origin:0 0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}.original_panel .original_account{margin-bottom:18px;position:relative;z-index:1}.original_panel .original_account_avatar{width:28px;height:28px;padding:0}.original_panel .original_account_nickname{padding-left:.85em;font-size:15px;color:#576b95}.original_panel_title{font-size:23px;color:#000;margin:0 0 16px}.original_panel_content{color:#333}.original_panel_tool{padding-top:20px;position:relative;z-index:1}.original_cell_nickname{display:inline-block;vertical-align:middle;font-weight:400;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;max-width:8em;color:#000}.original_tool_area{padding:1.17em 0;border-width:0;position:relative}.original_tool_area:before{content:" ";position:absolute;left:0;top:0;right:0;height:1px;border-top:1px solid #dfdfdf;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dfdfdf;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:20px;height:20px;margin-right:.2em}.original_tool_area .flex_cell{padding:0;font-size:14px}.original_tool_area .icon_access:after{margin-right:4px;top:0}.preview_appmsg .rich_media_title{margin-top:1.5em}.preview_appmsg .account_info{padding-top:3em}.original_page{background-color:transparent}.account_info{-webkit-tap-highlight-color:rgba(0,0,0,0);outline:0;padding-bottom:20px;font-size:14px}.account_info.appmsg_account_info{padding-bottom:32px}.account_info .radius_avatar img{background-color:transparent}.share_notice{font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.original_panel{background-color:#fafafa}.original_panel:after{border-color:#e6e6e6}.original_panel .original_account_avatar{width:30px;height:30px}.original_panel_tool{font-size:14px}.original_panel_tool a{color:#576b95}.original_panel_content{font-size:17px}.share_media{padding-bottom:30px}.icon_appmsg_tag{display:inline-block;vertical-align:middle;padding:0 .5em;font-size:12px;line-height:1.5;background-color:#c3c3c3;color:#fff;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;max-width:70%}.icon_appmsg_tag.primary{color:#3bb638;padding:4px .78em;background-color:rgba(9,187,7,0.08);font-size:12px;border-top-left-radius:.95em 50%;-moz-border-radius-topleft:.95em 50%;-webkit-border-top-left-radius:.95em 50%;border-top-right-radius:.95em 50%;-moz-border-radius-topright:.95em 50%;-webkit-border-top-right-radius:.95em 50%;border-bottom-left-radius:.95em 50%;-moz-border-radius-bottomleft:.95em 50%;-webkit-border-bottom-left-radius:.95em 50%;border-bottom-right-radius:.95em 50%;-moz-border-radius-bottomright:.95em 50%;-webkit-border-bottom-right-radius:.95em 50%}.icon_appmsg_tag.default{border:1px solid rgba(0,0,0,0.1);color:rgba(0,0,0,0.3);background-color:transparent;padding:0 .54em;font-size:15px;line-height:1.3;border-top-left-radius:.67em 50%;-moz-border-radius-topleft:.67em 50%;-webkit-border-top-left-radius:.67em 50%;border-top-right-radius:.67em 50%;-moz-border-radius-topright:.67em 50%;-webkit-border-top-right-radius:.67em 50%;border-bottom-left-radius:.67em 50%;-moz-border-radius-bottomleft:.67em 50%;-webkit-border-bottom-left-radius:.67em 50%;border-bottom-right-radius:.67em 50%;-moz-border-radius-bottomright:.67em 50%;-webkit-border-bottom-right-radius:.67em 50%}.rich_media_meta_list .icon_appmsg_tag.default{margin-top:-1px}.icon_appmsg_tag.title_tag{background-color:#d04b4e}.icon_global_tag_wrp{text-align:right;padding-bottom:12px}.icon_global_tag{background-color:rgba(118,118,118,0.16);color:rgba(0,0,0,0.41);line-height:2.2;border-top-left-radius:1em 50%;-moz-border-radius-topleft:1em 50%;-webkit-border-top-left-radius:1em 50%;border-bottom-left-radius:1em 50%;-moz-border-radius-bottomleft:1em 50%;-webkit-border-bottom-left-radius:1em 50%;padding:0 1.8em 0 1.34em;font-size:12px;margin-right:-24px;display:inline-block;vertical-align:top}.global_plain_btn{display:inline-block;vertical-align:middle;padding:0 1em;line-height:2;font-size:14px;-webkit-tap-highlight-color:rgba(0,0,0,0);border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px}.global_plain_btn.primary{color:#1aad19;border:1px solid currentColor}.global_plain_btn.primary:active{color:rgba(26,173,25,0.6)}</style>
+<style>
+        </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/pc3ec991.css">
+<![endif]-->
+
+    </head>
+    <body id="activity-detail" class="zh_CN sougou_body  appmsg_skin_default appmsg_style_default">
+
+<script nonce="580444234" type="text/javascript">
+    var write_sceen_time = (+new Date());
+</script>
+
+<div id="js_article" class="rich_media">
+
+    <div id="js_top_ad_area" class="top_banner"></div>
+
+    <div class="rich_media_inner">
+
+
+
+        <div id="page-content" class="rich_media_area_primary">
+          <div class="rich_media_area_primary_inner">
+
+
+
+
+            <div id="img-content">
+
+
+                <h2 class="rich_media_title" id="activity-name">
+                    世界杯4年一次不是为了赌球和跳楼，这些温暖的瞬间才该刷爆朋友圈
+
+                                                                                </h2>
+                <div id="meta_content" class="rich_media_meta_list">
+                                                                                <span class="rich_media_meta rich_media_meta_text">
+                                                林熙
+                                            </span>
+                                        <span class="rich_media_meta rich_media_meta_nickname" id="profileBt">
+                      <a href="javascript:void(0);" id="js_name">
+                        八点来读                      </a>
+                      <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                          <div class="profile_inner">
+                              <strong class="profile_nickname">八点来读</strong>
+                              <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                              <p class="profile_meta">
+                              <label class="profile_meta_label">微信号</label>
+                              <span class="profile_meta_value">badianlaidu</span>
+                              </p>
+
+                              <p class="profile_meta">
+                              <label class="profile_meta_label">功能介绍</label>
+                              <span class="profile_meta_value">总有一篇文章温暖你。每晚八点，美文相约。</span>
+                              </p>
+
+                          </div>
+                          <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                              <i class="profile_arrow arrow_out"></i>
+                              <i class="profile_arrow arrow_in"></i>
+                          </span>
+                      </div>
+                    </span>
+
+
+                    <em id="publish_time" class="rich_media_meta rich_media_meta_text"></em>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <div class="rich_media_content " lang='="en"' id="js_content">
+
+
+
+
+
+
+                    <p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"></span></p>
+<section class="_135editor" data-tools="135编辑器" data-id="91525" style="border-width: 0px;border-style: none;border-color: initial;margin-right: auto;margin-left: auto;width: 100%;" data-width="100%"><section style="margin: 8px;padding: 10px;line-height: 25.6px;white-space: normal;border-radius: 10px;height: auto;box-shadow: #dddddd 2px 2px 8px;display: -webkit-flex;"><section style="flex: 0 0 2cm;height: 78px;width:75px;"><p style="text-align:center;"><img class="lazyload " data-ratio="1" data-src="/out/resource/da55839b-2fbd-594b-bcf5-9024c17f6cec" data-type="jpeg" data-w="344" data-width="100%" style="visibility: visible !important;height: 100% !important;" title="八点来读.jpg" width="75.5781px"></p></section><section style="padding-right: 10px;padding-left: 10px;flex: 1 1 auto;height: 55px;"><section style="line-height: 35px;white-space: nowrap;"><span style="font-size: 16px;"><strong><span style=";">八点来读</span></strong></span></section><p style="font-size: 13px;line-height: 20px;color: #7f7f7f;"><span style="max-width: 100%;">暖心文字等你来读</span></p></section><section style="flex: 0 0 1.5cm;font-size: 15px;color: #56bb37;letter-spacing: 0px;text-align: center;line-height: 6;"><section style="margin-top: 25px;max-width: 100px;vertical-align: middle;overflow:hidden;"><section style='line-height: 2;letter-spacing: 0px;width: 55px;height: 30px;background-image: url("https://mmbiz.qpic.cn/mmbiz_gif/RzqndrlRJtyEfaLX8NVo7IpRUHCfaznvqqMtNPREebyE3kPkUkictDZ7w6qq8hK7uDbUwzmY8GGsTckRRFw7cew/640?wx_fmt=gif");background-repeat: no-repeat;background-size: 100% 100%;'><img class="lazyload " data-ratio="1" data-src="/out/resource/da55839b-2fbd-594b-bcf5-9024c17f6cec" data-type="jpeg" data-w="344" style="opacity:0;" title="八点来读.jpg"></section></section></section></section></section><p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"></span><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-ratio="0.5" data-src="/out/resource/76f7a85c-0ab4-5a30-a283-b72dbb369b01" data-type="jpeg" data-w="480"></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="white-space: normal;text-align: center;"><strong><span style="font-size: 14px;">文丨林熙</span></strong></p>
+<p style="white-space: normal;text-align: center;"><strong><span style="font-size: 14px;">来源丨林熙（ID：inks01）</span></strong></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">世界杯来了，夜晚沸腾了。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">多少人备好了啤酒、麻小，准备熬最长的夜，堵最贵的球。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">有人甚至为巨额赌资付出了生命代价。<br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">当胜负得失超过足球本身的重要，</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">这是四年一次的世界杯的意义所在吗？<br></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">我觉得不是。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">当哥伦比亚的球迷和墨西哥的球迷一起举起一个坐在轮椅上的埃及人，让他能看到自己国家球队的比赛，这个画面太美了。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-backh="496" data-backw="494" data-before-oversubscription-url="https://mmbiz.qpic.cn/mmbiz_jpg/KCBHnQQO2ZiaibPzuTciayibdQyxlt8BfqVoYoCuNUQcaOWlV3qbFwBicRtsmhyVnV8udE7yufuqtWL0JCzxZAWhbEQ/640?wx_fmt=jpeg" data-copyright="0" data-ratio="1.0031645569620253" data-s="300,640" data-src="/out/resource/474f8b0c-a7bf-55ba-bb30-1e5043dd5e06" data-type="jpeg" data-w="948" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">世界杯对于绝大部分球迷都是异常残酷的，因为走入决赛的队伍只有两支，举起大力神杯的赢家只有一人，更残酷的是，黑马是少数的，冠军更多时候不过在几个国家之间折返跑，德国、巴西、阿根廷、意大利......百万陪跑球迷，都逃不过或早或晚和自己国家的队伍打道回府的结局。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">他们要的，显然不是大力神杯。运动的魅力，远在胜负之外。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">体育场硬碰硬的较量里，深藏着改变世界的力量。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">这些温暖的瞬间才该刷爆朋友圈。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong style=";"><span style="letter-spacing: 1px;font-size: 15px;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="color: rgb(62, 62, 62);max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">▽</strong></span></strong></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong><span style="font-size: 15px;">1.最至死不渝的爱</span></strong></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">没有人不认识“金杯爷爷”吧？</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">他是巴西铁杆球迷，他总是手捧一个大力神杯的复刻品，从40岁到60岁，追随巴西队参加了在66个国家的150多场比赛，7次世界杯。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">2014年，在家门口的世界杯半决赛，巴西队1:7惨败德国无缘决赛，这是巴西最耻辱的一场结果，金杯爷爷紧紧搂着大力神杯，黯然流泪，那是巴西世界杯上最经典的瞬间。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-backh="220" data-backw="293" data-before-oversubscription-url="https://mmbiz.qpic.cn/mmbiz_jpg/KCBHnQQO2ZiaibPzuTciayibdQyxlt8BfqVoSy4ulUsrt0JbuWgtoqyic0c9aokY1gSKOzvMbxnYyv9JI0L0Zl3Z2fw/0?wx_fmt=jpeg" data-copyright="0" data-oversubscription-url="http://mmbiz.qpic.cn/mmbiz_jpg/KCBHnQQO2ZiaibPzuTciayibdQyxlt8BfqVoYxJXe0bEWyM9stDnfS3oEehiaYaotzcIBzenYOJN27ic3tHm1yEV7ftQ/0?wx_fmt=jpeg" data-ratio="0.7508532423208191" data-s="300,640" data-src="/out/resource/09ecf9d6-16e5-5573-9fa5-ba26f6abc904" data-type="jpeg" data-w="293" style="width: 558px !important;visibility: visible !important;" width="558px"></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">但他马上把自己珍藏了几十年的金杯转赠给旁边的德国球迷：</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">“戴着大力神杯去吧，冠军是你们的。”那是金杯爷爷的最后一次世界杯。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-copyright="0" data-ratio="0.9952305246422893" data-s="300,640" data-src="/out/resource/77aefc30-4a67-589f-a12a-5e4c792277ee" data-type="jpeg" data-w="629" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">2015年，在和癌症抗击了9年后，金杯爷爷去世了。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">2018年，他的两个儿子替父观战，带着老爷子的帽子和大力神杯，穿着印有他照片的衣服，来到莫斯科。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">真正的爱，翻山越岭，老爷子在另一个世界如果能看到，一定还在为巴西呐喊助威。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img data-copyright="0" data-ratio="0.631578947368421" data-s="300,640" data-src="/out/resource/3e0e4e5a-c48b-5bb6-b07b-e2f641a72d02" data-type="jpeg" data-w="608" style="width: auto !important;visibility: visible !important;" class="lazyload "></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"><strong style=";"><span style="letter-spacing: 1px;font-size: 15px;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="color: rgb(62, 62, 62);max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">▽</strong></span></strong></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong><span style="font-size: 15px;"><span style="color: rgb(62, 62, 62);">2.</span>最无私的退出</span></strong></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">2006年德国世界杯，最后一轮小组赛，欧文在一次简单的传球过程中十字韧带撕裂，立即痛苦倒地无法起身。但他受伤后的第一反应是费劲全身力气，爬出场外，不愿意影响比赛进程。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-copyright="0" data-ratio="0.5981818181818181" data-s="300,640" data-src="/out/resource/92e02405-a918-5992-8393-089948ce51f7" data-type="jpeg" data-w="550" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">我是一个巨星，我更是一个队员。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">我可以倒下，但梦想不可辜负。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong style=";"><span style="letter-spacing: 1px;font-size: 15px;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="color: rgb(62, 62, 62);max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">▽</strong></span></strong></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong><span style="font-size: 15px;">3.最温情的握手</span></strong></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">一个是曾经足球世界里最锋利的茅，他叫罗纳尔多，是桑巴军团战无不胜的前锋。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">一个是曾经足球世界里最坚实的盾，他叫卡恩，是牢牢把守住德意志战车的守门员。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-copyright="0" data-ratio="0.7106109324758842" data-s="300,640" data-src="/out/resource/1cfdc192-c739-5c1f-9c7b-621e738d658a" data-type="jpeg" data-w="622" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">他们本来是足球世界里最遥远的两个人，你攻我守，冰火两极。你向我发起无数次冲锋，我也无数次死守住自己的后方。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">但是当大罗将手伸向德国门神，跨越国家与角色的冲突瞬间被柔情化解。<br></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">起来呀兄弟，没有你的扑救，连我的金球都将黯然失色。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong style=";"><span style="letter-spacing: 1px;font-size: 15px;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="color: rgb(62, 62, 62);max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">▽</strong></span></strong></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong><span style="font-size: 15px;">4.最温暖的留位</span></strong></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">南非世界杯前，德国的守门员恩克受不了女儿夭折的打击，卧轨自杀。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">在世界杯中，德国的替补席上一直放着那件属于恩克的一号球衣。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-backh="269" data-backw="470" data-before-oversubscription-url="https://mmbiz.qpic.cn/mmbiz_jpg/KCBHnQQO2ZiaibPzuTciayibdQyxlt8BfqVonqKqLVWrMLnb8vopPiaj6he4EyLXhtibWkzzibkl64uI1ckx6pbyysYXQ/0?wx_fmt=jpeg" data-copyright="0" data-oversubscription-url="http://mmbiz.qpic.cn/mmbiz_jpg/KCBHnQQO2ZiaibPzuTciayibdQyxlt8BfqVobevkbbCWeoY2ibrzmyzLibHqfkKVDHUr03lcQHcHD5dofJH5MejbuOfg/0?wx_fmt=jpeg" data-ratio="0.5723404255319149" data-s="300,640" data-src="/out/resource/396ee983-7c57-5a6e-b7b7-5cc89f8afdc3" data-type="jpeg" data-w="470" style="width: 494px;visibility: visible !important;" width="100%"></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">其实你从未离开，只是换了一种方式，和我们一起并肩奋战。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">世界杯，我们一个都不能少。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"><strong style=";"><span style="letter-spacing: 1px;font-size: 15px;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="color: rgb(62, 62, 62);max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">▽</strong></span></strong></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong><span style="font-size: 15px;">5.最泪奔的胜利</span></strong></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">2007年，伊拉克获得亚洲杯冠军，彼时伊拉克局势不断恶化，全国上下炮火纷飞。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">难以想象一只队伍是在什么样的环境里艰难地训练，最终冲破枪林弹雨站上了亚洲之巅。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-copyright="0" data-ratio="0.7033333333333334" data-s="300,640" data-src="/out/resource/6921c051-9ebb-51b4-98a1-a0ffc82e2d01" data-type="jpeg" data-w="600" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">只要今天不被击倒，明天就接着奔跑，战争杀不死足球，捧起奖杯的伊拉克人，他们用生命踢球的样子让全世界动容。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"><strong style=";"><span style="letter-spacing: 1px;font-size: 15px;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="color: rgb(62, 62, 62);max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">▽</strong></span></strong></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong><span style="font-size: 15px;">6.最绅士的弃权</span></strong></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">2000年12月，英格兰超级联赛，来自意大利的迪卡尼奥离球门只有12米左右，无需任何技术，只要一点点力量，就可以把球从容地打进对方球门。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">但他看到对方守门员因膝部受伤倒地后，没有用脚踢球，而是将球抱在怀中。放弃了射门。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">这场比赛最终1：1战平。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">国际足联颁发迪卡尼奥2001年公平竞赛奖。 </span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-copyright="0" data-ratio="0.688" data-s="300,640" data-src="/out/resource/fab02a69-26a7-5785-a6cf-83765f2a51fa" data-type="jpeg" data-w="500" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">一个足球运动员能有多少个90分钟可以满场奔跑，有谁不渴望在短暂的运动生涯里追逐更多的胜利，但是总有更重要的目标值得我们追求，哪怕代价是与胜利擦肩而过。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">事实上，从世界杯到奥运到大小赛事，从足球到田径到各种竞技。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">运动的精神无处不在。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"><strong style=";"><span style="letter-spacing: 1px;font-size: 15px;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="color: rgb(62, 62, 62);max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">▽</strong></span></strong></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong><span style="font-size: 15px;">7.最值得喝彩的减速</span></strong></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">西班牙的一场自行车赛上，参赛选手埃斯特班位列第三，在接近终点300米的时候车轮胎爆裂，但他并未放弃比赛，扛起自行车，全速冲向终点。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-copyright="0" data-ratio="0.6236363636363637" data-s="300,640" data-src="/out/resource/b6aab025-f2a7-547e-8531-fb62b1f6f90f" data-type="jpeg" data-w="550" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">几秒钟后，位列第四的纳瓦罗追上，他本可轻松超过他，但选择主动减速跟随其后完成比赛。最终埃斯特班赢得铜牌。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-copyright="0" data-ratio="0.6218181818181818" data-s="300,640" data-src="/out/resource/a4ec5554-391c-5d32-be64-7874ee254bed" data-type="jpeg" data-w="550" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"> </span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">当两人通过终点时，观众群爆发出热烈的掌声。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">纳瓦罗说在终点线之前超过埃斯特班是不道德的，铜牌本就属于他。<br></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">胜利的意义不是一个奖牌或一个名次，而是我靠实力赢得自己的荣耀，我亦由衷敬佩在我之上的强者。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"><strong style=";"><span style="letter-spacing: 1px;font-size: 15px;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="color: rgb(62, 62, 62);max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">▽</strong></span></strong></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong><span style="font-size: 15px;">8.最无关胜利的胜利</span></strong></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">在2013年全运会，羽毛球女双决赛。四个国家队队友，湖北队王晓理/赵芸蕾和江苏队成淑/汤金华会师决赛。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">比赛进行到第二局，江苏队的成淑在救球时扭伤了左膝盖无法站立，比赛提前结束，湖北队自动获胜。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-copyright="0" data-ratio="0.6909090909090909" data-s="300,640" data-src="/out/resource/d6b2cc5d-4a0c-5b11-aa07-7445ebd3dc6c" data-type="jpeg" data-w="550" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">但湖北队的两名队员没有相拥庆祝，王晓理背起成淑，赵芸蕾协力托起，一刻不停地向急救室奔去。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-copyright="0" data-ratio="0.6654545454545454" data-s="300,640" data-src="/out/resource/7d1de865-99d8-5bb0-95eb-857aed7f164a" data-type="jpeg" data-w="550" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">他们的身后是全场起立经久不息的掌声。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">有一种力量比胜利更重，值得所有人肃然起敬。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"><strong style=";"><span style="letter-spacing: 1px;font-size: 15px;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="color: rgb(62, 62, 62);max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">▽</strong></span></strong></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong><span style="font-size: 15px;">9.最有力的拥抱</span></strong></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">2016年里约奥运会，羽毛球半决赛，林丹与李宗伟相遇，这是两个十几年的老对手第37次在正式比赛中相遇。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">最终李宗伟逆转淘汰了林丹。赛后两人走到一起，交换球衣，赤膊拥抱。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-copyright="0" data-ratio="1.020066889632107" data-s="300,640" data-src="/out/resource/01bcc258-aee5-5edf-b322-31ab494f087a" data-type="png" data-w="598" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">场上他们是对立的竞争对手，场下他们是十几年的兄弟。胜负结果在体育精神面前，是那么微不足道。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"><strong style=";"><span style="letter-spacing: 1px;font-size: 15px;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="color: rgb(62, 62, 62);max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">▽</strong></span></strong></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong><span style="font-size: 15px;">10.最动人的吻</span></strong></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">北京奥运会期间，格鲁吉亚与俄罗斯关系紧张。女子10米气手枪决赛，奖牌之争在两国选手之间展开。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">最终俄罗斯队的帕杰林娜和格鲁吉亚队的萨鲁克瓦泽分夺银、铜牌，二人在领奖台用俄语交谈，握手致意，萨鲁克瓦泽主动亲吻了帕杰林娜的脸庞。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-backh="342" data-backw="491" data-before-oversubscription-url="https://mmbiz.qpic.cn/mmbiz_jpg/KCBHnQQO2ZiaibPzuTciayibdQyxlt8BfqVo3zVMW0FGPsTFSlwbzpgUo4mqYs9NrCIxD99uMuHaiarJVWq3Ar9ANTQ/0?wx_fmt=jpeg" data-copyright="0" data-oversubscription-url="http://mmbiz.qpic.cn/mmbiz_jpg/KCBHnQQO2ZiaibPzuTciayibdQyxlt8BfqVo6JQkciar4wtQ2Zv42V9AGGmttYVsyhXrms41TM0NuyM2srSsm46sdzQ/0?wx_fmt=jpeg" data-ratio="0.6965376782077393" data-s="300,640" data-src="/out/resource/110237ab-e702-5a37-813a-a43a71ef4874" data-type="jpeg" data-w="491" style="width: 494px;visibility: visible !important;" width="100%"></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">无论国与国是如何的剑拔弩张，但赛场上的爱不分国度。体育是这样的纯粹，它容不得任何的杂质。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"><strong style=";"><span style="letter-spacing: 1px;font-size: 15px;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="color: rgb(62, 62, 62);max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">▽</strong></span></strong></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong><span style="font-size: 15px;">11.最有风度的返场</span></strong></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">北京奥运会，男子体操吊环决赛，陈一冰以近乎完美的表现征服了裁判，16.600的高分足以让他提前庆祝胜利。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">整个场馆被中国观众排山倒海的喝彩声包围， 大家已经提前开始庆祝金牌入账，忘乎所以的欢呼。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">只见陈一冰颇有大将风度地站出来示意观众安静，因为后面还有一位选手即将登场。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload __bg_gif" data-backh="268" data-backw="440" data-before-oversubscription-url="https://mmbiz.qpic.cn/mmbiz_gif/KCBHnQQO2ZiaibPzuTciayibdQyxlt8BfqVoZQOb2eMCQeul7JJ4rBFWXBuYrMH9VlXjcjR3KnFjBh4Ygdiba04rTpg/0?wx_fmt=gif" data-copyright="0" data-ratio="0.6090909090909091" data-src="/out/resource/f500f5ff-5ca9-5cb1-810e-f2b3676a1c2a" data-type="gif" data-w="440" style="width: 494px;visibility: visible !important;" width="100%"></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">比赛到最后，拼得是尊重。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">主场作战，东道主选手天时地利人和的条件实在是太利于发挥了，我享受最好的安排，也尊重对手的存在，让胜利正大光明，大将风度，大抵如此。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"> </span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"><strong style=";"><span style="letter-spacing: 1px;font-size: 15px;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="color: rgb(62, 62, 62);max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">▽</strong></span></strong></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong><span style="font-size: 15px;">12.最动容的等待</span></strong></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">里约奥运会，女子5000米半决赛。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">新西兰选手尼基汉布林不慎摔倒，随后带倒了身后的美国选手阿戈斯蒂诺。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">美国选手迅速起身，不过没有继续前进，而是反身拍打新西兰选手，把她扶了起来，两个人一起重回跑道。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-copyright="0" data-ratio="0.6201413427561837" data-s="300,640" data-src="/out/resource/c0ca1ae9-d53b-5123-80b4-2188cb800724" data-type="png" data-w="566" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">美国选手扶着扭伤了的新西兰选手，一瘸一拐地冲过终点线，他们比第一名慢了2分多钟。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">两人也拥抱在一起。场面令人感动。用四年的奥运轮回，换一场友谊，我不知道金牌的分量有多重，但有一种真情，千金难买。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-copyright="0" data-ratio="0.6190476190476191" data-s="300,640" data-src="/out/resource/d81a67da-1be2-52d2-928f-bed5f3ffea86" data-type="png" data-w="546" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><span style="font-size: 15px;"><strong style=";"><span style="letter-spacing: 1px;font-size: 15px;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="color: rgb(62, 62, 62);max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">▽</strong></span></strong></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: center;letter-spacing: 1px;"><strong><span style="font-size: 15px;">13.最深情的胜利</span></strong></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">2008年北京奥运会，德国举重选手施泰纳摘得金牌。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">在领奖台上他一手举起鲜花和金牌，一手举起亡妻的照片，举起全天下的男人哭得像个孩子。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">他的妻子此前因车祸去世。弥留之际最后的心愿是想和他一起去参加北京奥运会，他做到了。</span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><img class="lazyload " data-copyright="0" data-ratio="0.6722222222222223" data-s="300,640" data-src="/out/resource/36df0da5-fab4-58c9-9304-6a7c0a837130" data-type="jpeg" data-w="540" style="width: auto !important;visibility: visible !important;"></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;"><br></span></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">这就是我们热爱竞技，一次次忍不住为它狂热的理由吧。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><span style="font-size: 15px;">它用硬碰硬的实力，却编织出最温婉的画面，将这世间所有的激情、热血、流泪、温暖与感动，拥有以柔克刚的力量，告诉我们，体育，亦是我们热爱这个世界的方式。</span></p>
+<p style="white-space: normal;"><br></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><strong><span style="font-size: 15px;">这世界真好，感动与爱无处不在。</span></strong></p>
+<p style="margin: 0em 2em;white-space: normal;text-align: justify;letter-spacing: 1px;"><strong><span style="font-size: 15px;"><br></span></strong></p>
+<h1 style="white-space: normal;max-width: 100%;color: rgb(51, 51, 51);"></h1>
+<p style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;box-sizing: border-box;min-height: 1em;text-align: center;word-wrap: break-word !important;"><img class="lazyload __bg_gif" data-ratio="0.4545455" data-src="/out/resource/46dc1b59-1557-596a-92c8-b76111d34d2c" data-type="gif" data-w="22" style="box-sizing: border-box;vertical-align: middle;word-wrap: break-word !important;visibility: visible !important;width: auto !important;" width="auto"></p>
+<section style="white-space: normal;max-width: 100%;box-sizing: border-box;color: rgb(51, 51, 51);"><section class="" powered-by="xiumi.us" style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;"><section class="" style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;"><section class="" style="margin-top: 0.5em;margin-bottom: 0.5em;max-width: 100%;box-sizing: border-box;transform: translate3d(0px, 0px, 0px);text-align: center;word-wrap: break-word !important;overflow-wrap: break-word !important;"></section></section></section></section><section style="white-space: normal;max-width: 100%;box-sizing: border-box;color: rgb(51, 51, 51);"><section class="" powered-by="xiumi.us" style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;"><section class="" style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;"><section class="" style="margin-top: 0.5em;margin-bottom: 0.5em;max-width: 100%;box-sizing: border-box;transform: translate3d(0px, 0px, 0px);text-align: center;word-wrap: break-word !important;overflow-wrap: break-word !important;"></section></section></section><br style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"></section><section class="" style="white-space: normal;max-width: 100%;box-sizing: border-box;color: rgb(51, 51, 51);"><section class="" style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;"><section class="" style="padding-right: 10px;padding-left: 10px;max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;"><p style="margin-right: 8px;margin-left: 8px;max-width: 100%;min-height: 1em;line-height: normal;text-align: justify;box-sizing: border-box !important;word-wrap: break-word !important;"><span style="max-width: 100%;font-size: 14px;color: rgb(0, 0, 0);box-sizing: border-box !important;word-wrap: break-word !important;">作者：林熙，一个踩着90尾巴的射手男，喜欢一切文艺性感的东西，人生最大的梦想就是成为旅行者，环游世界，邂逅全世界的美好。公众号：林熙（ID：inks01）。</span></p>
+<p style="max-width: 100%;min-height: 1em;box-sizing: border-box !important;word-wrap: break-word !important;"><br style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;"></p>
+<ul class=" list-paddingleft-2" style="list-style-type: circle;"><li><section class="" style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;"><section class="" style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;"><section class="" style="padding-right: 10px;padding-left: 10px;max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;"><p style="margin-right: 16px;margin-left: 16px;max-width: 100%;min-height: 1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;"><strong style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 13px;color: rgb(123, 12, 0);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">本文经授权发布，转载请联系作者</span></strong></p></section></section></section></li></ul></section></section></section><p><br></p>
+<section>                            <section class="cps_inner cps_inner_list js_list_container js_product_container cps_inner_book">
+            <div class="cps_inner_wrp js_product_loop_content" data-pidtype="2" data-templateid="list" data-appid="wx831660fe3ded4389" data-pid="25162844" data-wxaappid="wx7bb576902363f4ff" data-wxapath="pages/product/product?pid=25162844&amp;unionid=P-337647m&amp;cps_package=dMqEym5zAgvLI_764gNYNTt9qgCDvt33w7uIzRKIB3c" data-cpspackage="">
+                    <div class="cps_inner_content">
+                        <figure class="cps_inner_image_container">
+                            <img class="lazyload js_cover cps_inner_image" data-src="https://res.wx.qq.com/product_material/K50-uXakn_AR_Jy3E0PHEmrkTDmuchiqwxR4kZ3ACApZxvTt10cKB69Rn6Rn8tCD" data-ratio="1" data-nopreviewclick="1" alt="">
+                        </figure>
+                        <div class="cps_inner_info">
+                            <div class="cps_inner_info_hd">
+                                <h2 class="cps_inner_info_title">中华传统经典诵读文本</h2>
+                                <p class="cps_inner_info_desc">作者：罗安宪 著</p>
+                            </div>
+
+                            <div class="cps_inner_info_ft">
+                                <div class="cps_inner_info_ft_left">
+                                    <span class="cps_inner_info_from">
+                                        <span data-ratio="1" data-nopreviewclick="1" style="background: url(http://mmbiz.qpic.cn/mmbiz_png/6nVmK0mHaRr8fd8C4yNUm5BrcwmJ17I867w7sZwrxtAmG0NdTKhZj8eAEeRt0Ycgc9pnL4ib77PJ0UKDoT43MsA/0) no-repeat center;
+                                        background-size: contain;" class="cps_inner_ic_from"></span>当当
+                                    </span>
+									                                    <span class="cps_inner_info_adTag js_cps_adTag">广告</span>
+									                                </div>
+                                <span class="cps_inner_btn_cps_info"><i class="cps_inner_ic_miniapp"></i><span class="js_btn_word">购买</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                            </section><p><br></p>
+                </div>
+                <script nonce="580444234" type="text/javascript">
+                    var first_sceen__time = (+new Date());
+
+                    if ("" == 1 && document.getElementById('js_content')) {
+                        document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+                    }
+
+
+                    (function(){
+                        if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                            var link = document.createElement('link');
+                            var head = document.getElementsByTagName('head')[0];
+                            link.rel = 'stylesheet';
+                            link.type = 'text/css';
+                            link.href = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/winwx3ec991.css";
+                            head.appendChild(link);
+                        }
+                    })();
+                </script>
+
+
+                <div class="ct_mpda_wrp" id="js_sponsor_ad_area" style="display:none;"></div>
+
+
+                                <div class="reward_area tc reward_area_primary" id="js_preview_reward_author" style="display:none;">
+                    <div class="reward-avatar" style="display: none;" id="js_preview_reward_author_avatar">
+                        <img src="" alt="" id="js_preview_reward_author_head">
+                    </div>
+                    <div class="reward-author" id="js_preview_reward_author_name">林熙</div>
+                    <p class="reward_tips" id="js_preview_reward_author_wording" style="display:none;"></p>
+                    <p>
+                        <a class="reward_button" id="js_preview_reward_author_link" href="##"><span id="js_preview_reward_link_text">赞赏</span></a>
+                    </p>
+                </div>
+
+                <div class="reward_qrcode_area reward_area tc" id="js_preview_reward_qrcode" style="display:none;">
+                    <p class="tips_global">长按二维码向我转账</p>
+                    <p id="js_preview_reward_ios_wording" class="reward_tips" style="display:none;"></p>
+                    <span class="reward_qrcode_img_wrp"><img class="reward_qrcode_img" src="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_reward_qrcode.2x3534dd.png"></span>
+                    <p class="tips_global">受苹果公司新规定影响，微信 iOS 版的赞赏功能被关闭，可通过二维码转账支持公众号。</p>
+                </div>
+
+
+                            </div>
+
+
+
+
+
+            <ul id="js_hotspot_area" class="article_extend_area"></ul>
+
+
+
+                        <div class="rich_media_tool" id="js_toobar3">
+
+                                            <div id="js_read_area3" class="media_tool_meta tips_global_primary meta_primary" style="display:none;">阅读 <span id="readNum3"></span>
+</div>
+
+                <span style="display:none;" class="media_tool_meta meta_extra meta_praise" id="like3">
+                    <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                </span>
+
+
+
+            </div>
+
+
+                        <div class="rich_media_tool" id="js_sg_bar">
+
+
+            </div>
+                      </div>
+        </div>
+
+        <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none"></div>
+
+
+
+        <div class="rich_media_area_extra">
+          <div class="rich_media_area_extra_inner">
+
+              <div id="js_share_appmsg">
+              </div>
+
+
+                            <div class="mpda_bottom_container" id="js_bottom_ad_area"></div>
+
+              <div id="js_iframetest" style="display:none;"></div>
+
+
+              <div class="rich_media_extra rich_media_extra_discuss" id="js_cmt_container" style="display:none">
+
+
+
+                <div class="discuss_mod" id="js_friend_cmt_area" style="display:none">
+
+
+
+                </div>
+
+                                <div class="discuss_mod" id="js_cmt_area" style="display:none">
+                </div>
+                              </div>
+          </div>
+        </div>
+
+
+        <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+            <div class="qr_code_pc_inner">
+                <div class="qr_code_pc">
+                    <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                    <p>微信扫一扫<br>关注该公众号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="js_pc_weapp_code" class="weui-desktop-popover weui-desktop-popover_pos-up-center weui-desktop-popover_img-text" style="display: none;">
+    <div class="weui-desktop-popover__content">
+        <div class="weui-desktop-popover__desc">
+            <img id="js_pc_weapp_code_img">
+            微信扫一扫<br>使用小程序<span id="js_pc_weapp_code_des"></span>        </div>
+    </div>
+</div>
+<div id="js_minipro_dialog" style="display:none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+        <div class="weui-dialog__bd">即将打开"<span id="js_minipro_dialog_name"></span>"小程序</div>
+        <div class="weui-dialog__ft">
+            <a id="js_minipro_dialog_cancel" href="javascript:void(0);" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+            <a id="js_minipro_dialog_ok" href="javascript:void(0);" class="weui-dialog__btn weui-dialog__btn_primary">打开</a>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html><!--tailTrap<body></body><head></head><html></html>-->
+<script src="/out/lazysizes.js" async=""></script>
